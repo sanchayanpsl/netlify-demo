@@ -1,4 +1,5 @@
 module.exports = {
+    target: 'serverless',
     serverRuntimeConfig: {
         secret: 'sd5egdf5ef35f3fdd'
     },
