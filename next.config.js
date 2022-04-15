@@ -15,8 +15,8 @@ module.exports = {
 },
 publicRuntimeConfig: {
   apiUrl: process.env.NODE_ENV === 'development'
-  ? 'https://main--capable-zabaione-a505bf.netlify.app/api' // development api
-  : 'https://main--capable-zabaione-a505bf.netlify.app/api' // production api
+  ? 'https://capable-zabaione-a505bf.netlify.app/api' // development api
+  : 'https://capable-zabaione-a505bf.netlify.app/api' // production api
       
 }
 }
