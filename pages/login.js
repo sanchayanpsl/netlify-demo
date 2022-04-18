@@ -418,7 +418,7 @@ function Login() {
     };
     if (data) {
       const res = await axios.post(
-        "http://localhost:8888/.netlify/functions/users",
+        "https://capable-zabaione-a505bf.netlify.app/.netlify/functions/users",
         { username: data.username, password: data.password }
       ).catch(function (error) {
         console.log(error);
