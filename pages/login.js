@@ -411,6 +411,15 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  useEffect(()=>{
+     const token =  localStorage.getItem("user")
+     if(token){
+         Router.push("/")
+     }else{
+         console.log("here")
+     }
+  })
+
   const handleLogin = async () => {
     const data = {
       username: username,
@@ -428,6 +437,7 @@ function Login() {
         var resCode = res.data;
         console.log(resCode, "hi");
         if (resCode.code == 200) {
+            localStorage.setItem("user",data[0])
           Router.push("/");
         } else {
           alert("Some Thing went wrong");
